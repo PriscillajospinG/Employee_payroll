@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Employee Dashboard</title>
+  <title>Dashboard</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Employee Payroll Dashboard</h1>
+  <h2>Employee Dashboard</h2>
   <form id="employee-form">
-    <input type="text" id="name" placeholder="Employee Name" required />
-    <input type="text" id="department" placeholder="Department" />
-    <input type="text" id="position" placeholder="Position" />
-    <input type="number" id="salary" placeholder="Base Salary" required />
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="text" id="department" placeholder="Department" required />
+    <input type="text" id="position" placeholder="Position" required />
+    <input type="number" id="salary" placeholder="Salary" required />
     <button type="submit">Add Employee</button>
   </form>
 
@@ -23,11 +21,14 @@
         <th>Department</th>
         <th>Position</th>
         <th>Salary</th>
-        <th>Actions</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody id="employee-table-body"></tbody>
   </table>
+
+  <br />
+  <button onclick="logout()">Logout</button>
 
   <script src="script.js"></script>
 </body>
